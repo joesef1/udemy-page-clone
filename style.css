@@ -8,12 +8,101 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(87, 93, 94);
+  background-color: #222325;
+  z-index: 10;
+  height: 77px;
 }
+.fixed-header-content{
+  margin: 12px 0 auto 23px;
+}
+.fixed-header-content h3{
+  margin-bottom: 5px;
+  color: #fff;
+}
+.Bestseller-info{
+
+}
+
+.layer-header{
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1C1D1F;
+  z-index: 10;
+  height: 90px;
+  position: absolute;
+}
+/* stikey */
+
+.stiky{
+  background-color: #ffffff;
+  width: 339px;
+  transform: translate(92px ,-50px);
+  z-index: 11;
+  box-shadow: 0px 0px 15px 1px black;
+}
+.vedio_section{
+  background-color: #449263;
+  height: 190px;
+}
+.btns_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.btns_container button{
+  width: 90%;
+  margin: 5px auto;
+  padding: 18px 0;
+  cursor: pointer;
+}
+.btns_container .cartBtn{
+  background-color: #A435F0;
+  font-size: 15px;
+  color: #fff;
+  border: 0;
+}
+.btns_container .buy_now{
+  background-color: #fff;
+  border: 1px solid;
+  font-size: 15px;
+  padding: 17px 0;
+}
+.Money-back{
+  color: gray;
+  text-align: center;
+  margin: 15px 0 20px 0;
+  font-size: 14px;
+}
+.includes,
+.ul_links{
+  margin: 5px auto;
+  width: 90%;
+}
+.includes p{
+  margin: 12px auto;
+}
+.ul_links {
+  transform: translateY(5px);
+}
+.ul_links a{
+color: rgb(58, 58, 58);
+font-size: 16px;
+font-weight: 600;
+margin-right: 5px;
+}
+
+
+
+/* ./stikey */
 
 .header{
   background-color: #1C1D1F;
   padding-bottom: 40px;
+}
+.course.h2{
+  font-size: 2.1rem;
+  font-weight: 700;
 }
 .header .header-cotent{
   /* background-color: rgb(160, 149, 149); */
@@ -30,7 +119,7 @@
 }
 
 .right-section-header{
-  background-color: rgb(192, 115, 115);
+  /* background-color: rgb(192, 115, 115); */
   width: 40%;
 }
 
@@ -56,7 +145,7 @@
 }
 .page_2 > h1 {
   font-size: 2.2rem;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
     segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
@@ -88,18 +177,18 @@
   gap: 1%;
 }
 
-#course_rating > button {
-  background-color: #eceb98;
+#course_rating > button,
+.Bestseller_s {
+  background-color: #ECEB98;
   color: #3d3c0a;
-  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
-    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
-    segoe ui symbol;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   border: 1px solid #eceb98;
+  padding: 3px 5px;
 }
 
-#course_rating > p0 {
+/* #course_rating > */
+ p0 {
   color: #f3ca8c;
   font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
     segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
@@ -108,7 +197,8 @@
   font-size: 1rem;
 }
 
-#course_rating > p1 {
+/* #course_rating > */
+ p1 {
   color: #cec0fc;
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
@@ -117,11 +207,13 @@
   font-size: 1rem;
 }
 
-#course_rating > p1 > a {
+/* #course_rating > */
+ p1 > a {
   color: #cec0fc;
 }
 
-#course_rating > p2 {
+/* #course_rating > */
+ p2 {
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
@@ -182,7 +274,7 @@
 
 /* right-section */
 .two-content .right-section{
-  background-color: rgb(145, 130, 130);
+  /* background-color: rgb(145, 130, 130); */
   width: 40%;
 }
 /* ./right-section */
@@ -248,7 +340,6 @@
  h1 {
   margin: 0;
   line-height: 2;
-  text-align: center;
 }
 h2 {
   margin: 0 0 0.5em;
@@ -268,6 +359,33 @@ input {
 .row .col:last-child {
   margin-top: 20px;
 }
+/* description */
+
+#more {
+  margin-top: 1%;
+}
+
+#more > p {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+}
+
+#more_1 
+,#more_1_instructor{
+  display: none;
+}
+
+#more_1 > p {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+}
+
+#more_1 > ul > li {
+  margin-top: 1.5%;
+}
+/* ./description */
 
 
 .accordion_section{
