@@ -2,7 +2,69 @@
   margin: 0%;
   padding: 0;
   box-sizing: border-box;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+                  segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+                  segoe ui emoji, segoe ui symbol;
 }
+#vedio_playerid{
+  display: none;
+}
+.vedio_player{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(31, 31, 31, 0.7);
+  z-index: 100;
+}
+.vedio-pop{
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #1C1D1F;
+  position: relative;
+}
+.x{
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  cursor: pointer;
+}
+.vedio_wraper{
+  width: 80% !important;
+  margin:auto !important;
+  padding-top: 80px;
+  position: relative;
+}
+.vedio-container #player{
+  position: absolute;
+  width: 100%;
+}
+.vedio_player_info{
+  width: 80%;
+  margin:auto;
+  padding-top: 20px;
+  color: #fff;
+}
+.vedio_player_info p{
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+
+.vedio-container #player{
+  
+}
+
+
+
+
+
+
 .fixed-header{
   position: fixed;
   top: 0;
@@ -39,12 +101,59 @@
   width: 339px;
   transform: translate(92px ,-50px);
   z-index: 11;
-  box-shadow: 0px 0px 15px 1px black;
+  box-shadow: 0px 0px 8px 0.1px #222325;
 }
 .vedio_section{
   background-color: #449263;
   height: 190px;
+  position: relative;
 }
+.vedio_section img{
+width: 100%;
+height: 100%;
+  background-size: contain;
+  position: absolute;
+}
+.layer{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.layer_vedio{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+}
+.layer_vedio_content {
+  z-index: 20;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: absolute; */
+}
+.layer_vedio_content img{
+width: 70px;
+height: 70px;
+transform: translate(135px ,55px);
+background-color: #fff;
+cursor: pointer;
+border-radius: 50%;
+padding: 3px;
+}
+.layer_vedio_content p{
+  position: absolute;
+  margin: 0 auto;
+  transform: translate(85px ,150px);
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-size: 17px;
+  font-weight: 700;
+}
+
 .btns_container{
   display: flex;
   flex-direction: column;
@@ -285,7 +394,7 @@ margin-right: 5px;
 /* left-section */
 .two-content .left-section{
   /* background-color: rgb(82, 62, 19); */
-  width: 60%;
+  width: 69%;
 }
 
  /* what you will learn  */

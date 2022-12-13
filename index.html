@@ -3,11 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script defer src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
+  <script src="./main.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+  <div id="vedio_playerid" class="vedio_player">
+    <div class="vedio-pop">
+      <div id="close_icon" class="x">&#x2715</div>
+      <div class="vedio-container">
+
+        <div class="vedio_player_info">
+          <span>Course Preview</span> <br> 
+          <p>Complete Credit Cards & Credit Course For Beginners to Adv</p>
+        </div>
+        <div class="vedio_wraper">
+          <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+            <source src="./imgs/dipper_chicks_feeding_bird_songbird_962.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
   <div class="header">
     <div class="fixed-header">
     <div class="fixed-header-content">
@@ -47,9 +79,9 @@
             </div>
             <p id="course_teach">created by <a href="#">jose potilla</a></p>
             <div id="course_timing">
-              <p>⏳ last update 3/2021</p>
-              <p>🌐 English</p>
-              <p>© English[Auto], french[Auto], 5more</p>
+              <p>© &nbsp;last update 3/2021</p>
+              <p>© &nbsp;English</p>
+              <p>© &nbsp;English[Auto]</p>
             </div>
           <!-- ./left black header -->
 
@@ -63,7 +95,18 @@
           <div class="stiky">
             <div class="sticky_sidebar">
               <div id="sticky-br">
-                <div class="vedio_section"></div>
+                <div class="vedio_section">
+                  <img src="https://picsum.photos/seed/picsum/200/300"/>
+                  <div class="layer"></div>
+
+                  <div class="layer_vedio">
+                    <div class="layer_vedio_content">
+                      <div><img src="./imgs/play-button (1).png"></div>
+                      <div><p>preview this course</p></div>
+                    </div>
+                  </div> 
+
+                </div>
                 <h1 style="font-size: 40px;margin-left: 16px;">E£4,480</h1>
               <div class="btns_container">
                   <button
@@ -495,6 +538,29 @@ function show_more_instructor() {
   }
 }
 
+
+// vedio pop-up
+
+const vedio_playerid =document.getElementById("vedio_playerid")
+const layer =document.getElementsByClassName("vedio_section")[0];
+
+const vedio_player =document.getElementsByClassName("vedio_player")[0];
+const close_icon =document.getElementById("close_icon");
+
+layer.addEventListener("click",()=> {
+  vedio_playerid.style.display="block"
+})
+
+
+close_icon.addEventListener("click",()=> {
+  vedio_playerid.style.display="none"
+  console.log(close_area);
+})
+vedio_player.addEventListener("click",()=> {
+  vedio_playerid.style.display="none"
+  console.log(close_area);
+})
+// ./vedio pop-up
 
 
     // ./description
