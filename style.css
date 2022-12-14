@@ -6,10 +6,39 @@
                   segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
                   segoe ui emoji, segoe ui symbol;
 }
-#vedio_playerid{
+/* rating */
+.rating_section{
+  width: 550px;
+  height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  overflow-y: scroll;
+
+}
+.rating_wrapper{
+  /* background-color: #3d3c0a; */
+  width: 90%;
+  margin: 0 auto;
+}
+.review_item.rate{
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  padding: 0 20px  20px 20px;
+}
+.Bestseller-info_rating{
+  margin-bottom: 30px;
+  padding: 21px 0 0 23px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* ./rating */
+#vedio_playerid,
+.rating_pop{
   display: none;
 }
-.vedio_player{
+.vedio_player ,
+.rating_pop{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -17,6 +46,15 @@
   left: 0;
   background-color: rgba(31, 31, 31, 0.7);
   z-index: 100;
+}
+.clicked_layer,
+.clicked_layer_vedio
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .vedio-pop{
   width: 600px;
@@ -32,6 +70,13 @@
   right: 20px;
   top: 17px;
   cursor: pointer;
+}
+.x_rate{
+  position: absolute;
+  right: 26px;
+  top: 17px;
+  cursor: pointer;
+  font-size: 20px;
 }
 .vedio_wraper{
   width: 80% !important;

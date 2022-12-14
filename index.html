@@ -12,8 +12,9 @@
 </head>
 <body>
 
-  <div id="vedio_playerid" class="vedio_player">
-    <div class="vedio-pop">
+  <div  id="vedio_playerid" class="vedio_player">
+  <div style="z-index: 250;" class="clicked_layer_vedio"></div>
+    <div style="z-index: 300;" class="vedio-pop">
       <div id="close_icon" class="x">&#x2715</div>
       <div class="vedio-container">
 
@@ -580,6 +581,7 @@
           <!-- ./Course content -->
 
       </div>
+    <!-- </div> -->
 
       <div class="right-section">.</div>
   <!-- </div> -->
@@ -592,8 +594,8 @@
 
 
 <!-- review popup -->
-<!-- 
-<div id="vedio_playerid_rate" class="vedio_player_rate">
+
+<!-- <div id="vedio_playerid_rate" class="vedio_player_rate">
   <div class="rate_pop_rate">
     <div id="close_icon_rate" class="x">&#x2715</div>
 
@@ -611,6 +613,141 @@
 
   </div>
 </div> -->
+
+<div class="rating_pop">
+  <div style="z-index: 250;" class="clicked_layer"></div>
+  <div style="z-index: 300;" class="rating_section">
+    <div id="close_icon_rate" class="x_rate">&#x2715</div>
+    <div class="Bestseller-info_rating">
+      <p>⭐ 4.5 course rating <strong>•</strong>   80 ratings</p>
+    </div>
+    
+    <div class="rating_wrapper">
+  
+      <div class="review_item rate">
+        <div style="display: flex; gap: 1%; margin: 25px 0;">
+          <img
+            style="width: 15%; border-radius: 50%"
+            src="https://img-c.udemycdn.com/user/200_H/101610246_6b5d_3.jpg"
+            alt=""
+          />
+          <div id="review_profile">
+      
+            <div  class="progress">
+              <p style="margin-top: 5%; font-size: 1rem; ">
+                Sasikumar C.
+              </p>
+            </div>
+      
+            <p style="margin-top: 2%; font-size: 0.8rem; ">
+              ⭐⭐⭐⭐⭐ <span style="color: gray;">a week ago</span> 
+            </p>
+    
+          </div>
+        </div>
+        <span class="comment">A very good class covering a to z on credit card usage. Value for money!</>
+      </div>  
+      
+      <div class="review_item rate">
+        <div style="display: flex; gap: 1%; margin: 25px 0;">
+          <img
+            style="width: 15%; border-radius: 50%"
+            src="https://img-c.udemycdn.com/user/200_H/101610246_6b5d_3.jpg"
+            alt=""
+          />
+          <div id="review_profile">
+      
+            <div  class="progress">
+              <p style="margin-top: 5%; font-size: 1rem; ">
+                Sasikumar C.
+              </p>
+            </div>
+      
+            <p style="margin-top: 2%; font-size: 0.8rem; ">
+              ⭐⭐⭐⭐⭐ <span style="color: gray;">a week ago</span> 
+            </p>
+    
+          </div>
+        </div>
+        <span class="comment">A very good class covering a to z on credit card usage. Value for money!</>
+      </div>  
+      
+      <div class="review_item rate">
+        <div style="display: flex; gap: 1%; margin: 25px 0;">
+          <img
+            style="width: 15%; border-radius: 50%"
+            src="https://img-c.udemycdn.com/user/200_H/101610246_6b5d_3.jpg"
+            alt=""
+          />
+          <div id="review_profile">
+      
+            <div  class="progress">
+              <p style="margin-top: 5%; font-size: 1rem; ">
+                Sasikumar C.
+              </p>
+            </div>
+      
+            <p style="margin-top: 2%; font-size: 0.8rem; ">
+              ⭐⭐⭐⭐⭐ <span style="color: gray;">a week ago</span> 
+            </p>
+    
+          </div>
+        </div>
+        <span class="comment">A very good class covering a to z on credit card usage. Value for money!</>
+      </div>  
+      
+      <div class="review_item rate">
+        <div style="display: flex; gap: 1%; margin: 25px 0;">
+          <img
+            style="width: 15%; border-radius: 50%"
+            src="https://img-c.udemycdn.com/user/200_H/101610246_6b5d_3.jpg"
+            alt=""
+          />
+          <div id="review_profile">
+      
+            <div  class="progress">
+              <p style="margin-top: 5%; font-size: 1rem; ">
+                Sasikumar C.
+              </p>
+            </div>
+      
+            <p style="margin-top: 2%; font-size: 0.8rem; ">
+              ⭐⭐⭐⭐⭐ <span style="color: gray;">a week ago</span> 
+            </p>
+    
+          </div>
+        </div>
+        <span class="comment">A very good class covering a to z on credit card usage. Value for money!</>
+      </div>  
+      
+      <div class="review_item rate">
+        <div style="display: flex; gap: 1%; margin: 25px 0;">
+          <img
+            style="width: 15%; border-radius: 50%"
+            src="https://img-c.udemycdn.com/user/200_H/101610246_6b5d_3.jpg"
+            alt=""
+          />
+          <div id="review_profile">
+      
+            <div  class="progress">
+              <p style="margin-top: 5%; font-size: 1rem; ">
+                Sasikumar C.
+              </p>
+            </div>
+      
+            <p style="margin-top: 2%; font-size: 0.8rem; ">
+              ⭐⭐⭐⭐⭐ <span style="color: gray;">a week ago</span> 
+            </p>
+    
+          </div>
+        </div>
+        <span class="comment">A very good class covering a to z on credit card usage. Value for money!</>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -674,6 +811,8 @@ const layer =document.getElementsByClassName("vedio_section")[0];
 
 const vedio_player =document.getElementsByClassName("vedio_player")[0];
 const close_icon =document.getElementById("close_icon");
+const clicked_layer_vedio =document.getElementsByClassName("clicked_layer_vedio")[0];
+
 
 layer.addEventListener("click",()=> {
   vedio_playerid.style.display="block"
@@ -682,13 +821,31 @@ layer.addEventListener("click",()=> {
 
 close_icon.addEventListener("click",()=> {
   vedio_playerid.style.display="none"
-  console.log(close_area);
 })
-vedio_player.addEventListener("click",()=> {
+clicked_layer_vedio.addEventListener("click",()=> {
   vedio_playerid.style.display="none"
-  console.log(close_area);
 })
 // ./vedio pop-up
+
+
+
+// rating
+const close_icon_rate =document.getElementById("close_icon_rate");
+const rating_pop =document.getElementsByClassName("rating_pop")[0];
+const clicked_layer =document.getElementsByClassName("clicked_layer")[0];
+
+close_icon_rate.addEventListener("click",()=> {
+  rating_pop.style.display="none"
+})
+
+clicked_layer.addEventListener("click",()=> {
+  rating_pop.style.display="none"
+})
+
+const showMoreRev = () => { 
+  rating_pop.style.display="block"
+ }
+// ./rating
 
 
     // ./description
