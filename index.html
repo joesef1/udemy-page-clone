@@ -10,10 +10,43 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
   <style>
-    #more {display: none;}
+    #more,#more2 {display: none;}
     </style>
 </head>
 <body>
+<div class="mobile-h">
+
+    <div class="fixed-header_m">
+
+      <div class="fixed-header-content">
+        <!--  -->
+          <div>
+            <h3 class=" h2">Complete Credit Cards & Credit Course... </h3>
+            <div class="Bestseller-info">
+              <button class="Bestseller_s">
+                <b>Bestseller</b>
+              </button>
+              <p0 >4.5⭐</p0>
+              <p1><a href="#">(67 ratings)</a></p1>
+              <p2>384 students</p2>
+            </div>
+          </div>
+          <!--  -->
+            <div style="display: flex; display: none;" class="m_btn">
+              <div>
+                <p style="font-size: 20px;font-weight: 700;">E£179.99 </p>
+                <p style="text-decoration: line-through;font-size: 14px;">E£319.99 </p>
+              </div>
+          <button class="buy_now"  onclick="cartPage()">
+                <b>Buy now </b>
+            </button>
+          </div>
+          <!--  -->
+      </div>
+    
+</div>
+
+</div>
 
   <div  id="vedio_playerid" class="vedio_player">
   <div style="z-index: 250;" class="clicked_layer_vedio"></div>
@@ -67,9 +100,20 @@
         <div class="left-section-header">
 
           <div class="page_2">
-            <!-- <div class="mobile-vedio">
-              <video src=""></video>
-            </div> -->
+            <div class="mobile_vedio">
+              <div class="vedio_section">
+                <img src="https://picsum.photos/seed/picsum/200/300"/>
+                <div class="layer"></div>
+
+                <div class="layer_vedio">
+                  <div class="layer_vedio_content">
+                    <div><img src="./imgs/play-button (1).png"></div>
+                    <div><p>preview this course</p></div>
+                  </div>
+                </div> 
+              </div>
+
+            </div>
           
             <h2 class="course h2">Complete Credit Cards & Credit Course For Beginners to Adv</h2>
             <p>
@@ -89,7 +133,47 @@
             </div>
           <!-- ./left black header -->
 
-          
+
+
+
+
+
+
+          <div style="display: none;"  class="mobile-add-card">
+            <h1 style="font-size: 40px;">E£4,480</h1>
+              <div class="btns_container">
+                  <button
+                    id="add_to_cart"
+                    class="cartBtn"
+                  >
+                    <b id="showAddtoCart">Add to cart</b>
+                    <!-- <b id="showAddedtoCart">Added to cart</b></button> -->
+                    <br />
+                  <!-- <button class="buy_now"  onclick="cartPage()">
+                    <b>Buy now </b>
+                  </button> -->
+              </div>
+                <p class="Money-back">
+                  30-days Money-back Guarantee <br> <br>Full Lifetime Access
+                </p>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
           </div>
 
@@ -109,7 +193,6 @@
                       <div><p>preview this course</p></div>
                     </div>
                   </div> 
-
                 </div>
                 <h1 style="font-size: 40px;margin-left: 16px;">E£4,480</h1>
               <div class="btns_container">
@@ -450,14 +533,14 @@
 
 
   <!-- new content -->
-  <div class="intro">
-    <div class="fog"></div>
+   <div class="intro">
+    <div class="fog2"></div>
 <p>Hello everybody! My name is Mike Gap. I am from Toronto, Canada. <br><br><br>
   I love everything finance, internet, and eCommerce.<br><br>
   I have a great background in banking, credit and credit cards.<br><br>  
-  I am also very knowledgable in website building and eCommerce.<br><br><span id="dots"></span><span id="more">I do everything online and so all my income comes online too, so I wanted to show the world the skillsets I use to make money online.<br><br><br>
+  I am also very knowledgable in website building and eCommerce.<br><br><span id="dots2"></span><span id="more2">I do everything online and so all my income comes online too, so I wanted to show the world the skillsets I use to make money online.<br><br><br>
 So feel free to checkout my tutorials and lessons.<br><br><br></span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+<button onclick="myFunction2()" id="myBtn2">Read more</button>
 
   </div>
   <!-- ./new content -->
@@ -837,6 +920,7 @@ const showMoreRev = () => {
 
     // ./description
 
+    
 
 
 
@@ -844,27 +928,8 @@ const showMoreRev = () => {
 
 
 
-    function myFunction() {
-      const fog =document.getElementsByClassName("fog")[0]
+// console.log(dots);
 
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-    fog.style.display="block"
-
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-    fog.style.display="none"
-    // console.log(fog);
-  }
-}
   
     </script>
   
