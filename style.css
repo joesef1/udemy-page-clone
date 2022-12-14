@@ -438,11 +438,11 @@ margin-right: 5px;
  /* what you will learn  */
  #learn_1 {
   /* width: 50%; */
-  height: 350px;
+  /* height: 350px; */
   border: 1px solid rgb(190, 190, 190);
   /* margin-left: 10%; */
-  padding: 25px;
-  margin-top: 2%;
+  padding: 13px 30px 35px 35px ;
+  margin-top: 6%;
   margin-bottom: 30px;
 
 }
@@ -453,7 +453,7 @@ margin-right: 5px;
     segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .learn_2 {
@@ -468,7 +468,7 @@ margin-right: 5px;
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .learn_2 > ul > li {
@@ -479,7 +479,7 @@ margin-right: 5px;
 }
 
 .learn_2 > ul {
-  width: 44%;
+  width: 48%;
 }
  /* ./what you will learn  */
 
@@ -510,28 +510,28 @@ input {
 .desc-section{
   margin-bottom: 20px;
 }
-#more {
+.more {
   margin-top: 1%;
 }
 
-#more > p {
+.more > p {
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
 }
 
-#more_1 
-,#more_1_instructor{
+.more_1 
+,.more_1_instructor{
   display: none;
 }
 
-#more_1 > p {
+.more_1 > p {
   font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
 }
 
-#more_1 > ul > li {
+.more_1 > ul > li {
   margin-top: 1.5%;
 }
 /* ./description */
@@ -699,4 +699,10 @@ right: 0;
 left: 0;
   position: absolute;
   z-index: 1;
+}
+.Requirements li{
+  font-size: 14px;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.3rem;
 }
